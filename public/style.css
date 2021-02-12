@@ -1,0 +1,36 @@
+body{
+    background-color:lemonchiffon;
+}
+
+.container{
+    padding: 15px;
+}
+
+.container > h1{
+    padding: 25px;
+    text-shadow: 2px 2px 5px red;
+    font-family: cursive;
+}
+
+.container > h2{
+    text-shadow: 2px 2px 5px red;
+    font-family: cursive;
+}
+
+button{
+    text-shadow: 2px 2px 5px palevioletred;
+    font-family: cursive;
+}
+
+.write{
+    font-family: cursive;
+}
+
+#invisible{
+    display: none;
+}
+
+#head_subjects_page{
+    text-shadow: 2px 2px 5px red;
+    font-family: cursive;
+}

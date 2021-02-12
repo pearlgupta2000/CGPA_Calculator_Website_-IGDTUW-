@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+
+    <script defer src="functions.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="display-2" align="center">CGPA CALCULATOR</h1>
+
+
+        <div class="card text-center">
+            <div class="card-header">
+             Specifically Made For :<br>   
+             Indira Gandhi Delhi Technical University for Women , Delhi
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><b>Input your Branch (cse,it,ece,mech,csai) and Semester</b></h4>
+              <h5 class="card-text"> For example : (cse_3 for CSE 3rd Semester)</h5>
+              <input type="text" id="branch_sem">
+            </div>
+            <div class="card-footer text-muted">
+              <button type="button" class="btn btn-danger" id="submit_branch">SUBMIT</button>
+            </div>
+        </div>
+
+          <br><br>
+        <div id="invisible">
+          <h2 align="center" id="head_subjects_page"></h2>
+
+          <br>
+          <h5 align="center" class="write">( Enter Marks of each Subject out of 100 )</h5>
+          <br>  
+
+        <div class="row" id="subjects_list">
+        </div>
+
+        <div class="row">
+          <div class="col-5 p-1 mx-3 my-1">
+              <button type="submit" class="btn btn-success" id="but_cgpa">Submit</button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 p-1 mx-3 my-1 write">
+              <label for="cgpa_with" class="form-label" aria-disabled="true"><b>CGPA with Credits:</b></label>
+              <input type="number" class="form-control" id="cgpa_with" aria-describedby="number" max="100" min="0">
+          </div>
+          <div class="col-5 p-1 mx-3 my-1 write">
+              <label for="cgpa_without" class="form-label" aria-disabled="true"><b>CGPA without Credits:</b></label>
+              <input type="number" class="form-control" id="cgpa_without" aria-describedby="number" max="100" min="0">
+          </div>
+      </div>
+      </div>
+
+    </div>
+    
+</body>
+</html>
